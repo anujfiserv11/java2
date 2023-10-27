@@ -1,10 +1,15 @@
+import java.util.ArrayList;
+
+
+
 public class Main {
     public static void main(String[] args) {
         //ex1();
         //ex2();
        //ex3();
-        ex4();
+        // ex4();
         // ex5();
+        ex6();
     }
 
     private static void ex1() {
@@ -69,5 +74,16 @@ System.out.println("Person count: " + Person.getPersonCount());
     shoppingCart.calculateTotal();
     System.out.println(shoppingCart.getTotal());
     
+    }
+    private static void ex6()
+    {
+        var shapes = new ArrayList<Shape>();
+    shapes.add(new Square(3));
+    shapes.add(new Rectangle(10,3));
+    for (Shape s : shapes) {
+        s.draw();
+        
+}
+
     }
 }
